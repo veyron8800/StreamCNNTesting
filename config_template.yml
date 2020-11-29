@@ -1,0 +1,15 @@
+#KerasJson: {name}.json
+KerasH5: {name}.h5
+{test_data_prefix}InputData: TestData/test_images.dat
+{test_data_prefix}OutputPredictions: TestData/test_labels.dat
+OutputDir: {name}
+ProjectName: {name}
+XilinxPart: xcku115-flvb2104-2-i
+ClockPeriod: 5
+
+IOType: {io_type}
+HLSConfig:
+ Model:
+   Precision: {ap_type}
+   ReuseFactor: 2
+   Strategy: {strategy}
